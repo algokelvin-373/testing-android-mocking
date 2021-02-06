@@ -6,10 +6,12 @@ object Addition {
     }
 }
 
-class Calculator {
+class StaticCalculator {
+    var result = 0
 
     fun calc(a: Int, b: Int): Int {
-        return Addition.addition(a, b)
+        result = Addition.addition(a, b)
+        return result
     }
 
 }
